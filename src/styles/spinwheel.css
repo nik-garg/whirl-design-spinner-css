@@ -1,0 +1,38 @@
+
+/* Spin wheel animations and custom styling */
+.spinning {
+  animation: spin 5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.stroke-text {
+  text-shadow: 
+    -2px -2px 0 #003088,
+    2px -2px 0 #003088,
+    -2px 2px 0 #003088,
+    2px 2px 0 #003088,
+    0 -2px 0 #003088,
+    0 2px 0 #003088,
+    -2px 0 0 #003088,
+    2px 0 0 #003088;
+  -webkit-text-stroke: 2px #003088;
+}
+
+.clip-triangle-down {
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(calc(360deg * 5 + var(--random-spin, 45deg)));
+  }
+}
+
+/* Add some more styles for responsive design */
+@media (max-width: 640px) {
+  .stroke-text {
+    -webkit-text-stroke: 1px #003088;
+  }
+}
