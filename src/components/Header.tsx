@@ -4,10 +4,10 @@ import React from "react";
 const Header = () => {
   return (
     <div className="text-center mb-8 relative">
-      <h1 className="text-5xl font-extrabold mb-1 relative z-10 font-squada">
+      <h1 className="text-5xl font-extrabold mb-1 relative z-10 font-squada tracking-wide">
         <span className="text-white stroke-text">DAILY</span>
       </h1>
-      <h2 className="text-6xl font-extrabold relative z-10 font-squada">
+      <h2 className="text-6xl font-extrabold relative z-10 font-squada tracking-wide">
         <span className="text-yellow-300 stroke-text transform inline-block">SPIN</span>
         <span className="text-white mx-2">&</span>
         <span className="text-yellow-300 stroke-text transform inline-block">WIN</span>
