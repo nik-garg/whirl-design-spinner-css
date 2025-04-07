@@ -41,12 +41,17 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-blue-400 to-blue-600">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-blue-500 to-blue-700 py-10">
       <div className="container max-w-md px-4 py-8 flex flex-col items-center">
         <Header />
-        <SpinWheel />
+        
+        {/* Adding a background for the spinner */}
+        <div className="relative mb-10 p-6 rounded-full bg-blue-400/30 backdrop-blur-sm border-4 border-white/20 shadow-2xl">
+          <SpinWheel />
+        </div>
+        
         <Button 
-          className="mt-6 w-full py-6 text-2xl font-bold rounded-full bg-white text-blue-500 hover:bg-blue-50 transition-colors"
+          className="mt-2 w-full py-6 text-2xl font-bold rounded-full bg-white text-blue-500 hover:bg-blue-50 transition-colors shadow-lg"
           onClick={handleSpin}
           disabled={isSpinning}
         >
