@@ -64,14 +64,13 @@ const segments: SegmentProps[] = [
 const SpinWheel = () => {
   return (
     <div className="relative w-full max-w-sm aspect-square">
-      {/* Wheel background design - adding circular pattern */}
-      <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-600 to-blue-800 shadow-xl"></div>
-      <div className="absolute inset-4 rounded-full bg-gradient-to-r from-blue-500 to-blue-700 shadow-inner"></div>
+      {/* Wheel outer ring */}
+      <div className="absolute inset-0 rounded-full bg-gray-100 shadow-lg"></div>
       
       {/* Wheel with segments */}
       <div 
         id="wheel" 
-        className="absolute inset-8 rounded-full overflow-hidden"
+        className="absolute inset-2 rounded-full overflow-hidden"
       >
         <div className="w-full h-full relative">
           {segments.map((segment, index) => (
@@ -87,13 +86,13 @@ const SpinWheel = () => {
       </div>
       
       {/* Center dot */}
-      <div className="absolute left-1/2 top-1/2 w-16 h-16 bg-gradient-to-b from-blue-400 to-blue-600 rounded-full transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center shadow-lg z-20 border-4 border-white">
-        <div className="w-10 h-10 bg-blue-700 rounded-full shadow-inner"></div>
+      <div className="absolute left-1/2 top-1/2 w-12 h-12 bg-blue-500 rounded-full transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center shadow-md z-20">
+        <div className="w-8 h-8 bg-blue-600 rounded-full transform rotate-45 shadow-inner"></div>
       </div>
       
       {/* Pointer */}
       <div className="absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-1/2 z-10">
-        <div className="w-8 h-14 bg-gradient-to-b from-blue-400 to-blue-600 clip-triangle-down shadow-lg border-2 border-white"></div>
+        <div className="w-6 h-12 bg-blue-500 clip-triangle-down shadow-md"></div>
       </div>
     </div>
   );

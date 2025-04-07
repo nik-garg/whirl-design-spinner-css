@@ -30,11 +30,6 @@
   }
 }
 
-/* Improved glow effect for the wheel */
-.wheel-glow {
-  box-shadow: 0 0 15px 5px rgba(59, 130, 246, 0.6);
-}
-
 /* Add some more styles for responsive design */
 @media (max-width: 640px) {
   .stroke-text {
