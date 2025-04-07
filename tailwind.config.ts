@@ -92,6 +92,7 @@ export default {
       },
       fontFamily: {
         'playfair': ['Playfair Display', 'serif'],
+        'squada': ['Squada One', 'sans-serif'],
       }
     }
   },
