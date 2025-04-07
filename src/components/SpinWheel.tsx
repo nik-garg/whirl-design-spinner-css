@@ -1,5 +1,6 @@
 
 import React from "react";
+import "@/styles/spinwheel.css";
 
 interface SegmentProps {
   value: string;
@@ -69,7 +70,7 @@ const SpinWheel = () => {
       {/* Wheel with segments */}
       <div 
         id="wheel" 
-        className="absolute inset-2 rounded-full overflow-hidden transform transition-all duration-5000 ease-out"
+        className="absolute inset-2 rounded-full overflow-hidden"
       >
         <div className="w-full h-full relative">
           {segments.map((segment, index) => (

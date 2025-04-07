@@ -27,7 +27,7 @@ const Index = () => {
     const wheelElement = document.getElementById("wheel");
     const resultIndex = spinWheel(wheelElement);
     
-    // Show result after animation finishes
+    // Show result after animation finishes (5 seconds)
     setTimeout(() => {
       if (resultIndex >= 0) {
         toast({
